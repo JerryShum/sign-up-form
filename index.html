@@ -6,44 +6,81 @@
     <title>Sign-Up-Form</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
   </head>
   <body>
     <form action="index.html" method="post">
       <fieldset class="form-main">
         <legend>Sign Up!</legend>
 
-        <div>
-          <label for="firstname">First Name</label>
+        <p>
+          <label for="firstname">
+            <span>First Name</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
           <input
             type="text"
             name="firstname"
             id="firstname"
             class="input-text"
+            required
           />
-        </div>
-        <div>
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" />
-        </div>
+        </p>
+        <p>
+          <label for="lastname">
+            <span>Last Name</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="text" name="lastname" id="lastname" required />
+        </p>
 
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email" />
-        </div>
+        <p>
+          <label for="email">
+            <span>Email Address</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="email" name="email" id="email" required />
+        </p>
 
-        <div>
-          <label for="telenum">Phone Number</label>
-          <input type="tel" name="telenum" id="telenum" />
-        </div>
+        <p>
+          <label for="telenum">
+            <span>Phone Number</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input
+            type="tel"
+            name="telenum"
+            id="telenum"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            placeholder="(123)-456-7890"
+            required
+          />
+        </p>
 
-        <div>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-        </div>
+        <p>
+          <label for="password">
+            <span>Password</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="password" name="password" id="password" required />
+        </p>
 
-        <label for="confirmpassword">Confirm Password</label>
-        <input type="text" name="confirmpassword" id="confirmpassword" />
+        <p>
+          <label for="confirmpassword">
+            <span>Confirm Password</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input
+            type="text"
+            name="confirmpassword"
+            id="confirmpassword"
+            required
+          />
+        </p>
       </fieldset>
+
+      <button type="submit"></button>
     </form>
   </body>
 </html>
