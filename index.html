@@ -21,73 +21,76 @@
           <span class="icon-text">ODIN</span>
         </div>
       </section>
+
       <section class="section-form">
-        <form action="index.html" method="post">
-          <fieldset class="form-main">
-            <legend>Sign Up!</legend>
-            <p>
-              <label for="firstname">
-                <span>First Name</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                class="input-text"
-                required
-              />
-            </p>
-            <p>
-              <label for="lastname">
-                <span>Last Name</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="text" name="lastname" id="lastname" required />
-            </p>
-            <p>
-              <label for="email">
-                <span>Email Address</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="email" name="email" id="email" required />
-            </p>
-            <p>
-              <label for="telenum">
-                <span>Phone Number</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input
-                type="tel"
-                name="telenum"
-                id="telenum"
-                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-                placeholder="(123)-456-7890"
-                required
-              />
-            </p>
-            <p>
-              <label for="password">
-                <span>Password</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="password" name="password" id="password" required />
-            </p>
-            <p>
-              <label for="confirmpassword">
-                <span>Confirm Password</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input
-                type="text"
-                name="confirmpassword"
-                id="confirmpassword"
-                required
-              />
-            </p>
-          </fieldset>
-          <button type="submit"></button>
-        </form>
+        <div class="form-container">
+          <form action="index.html" method="post">
+            <fieldset class="form-main">
+              <p>
+                <label for="firstname">
+                  <span>First Name</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  class="input-text"
+                  required
+                />
+              </p>
+              <p>
+                <label for="lastname">
+                  <span>Last Name</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="lastname" id="lastname" required />
+              </p>
+              <p>
+                <label for="email">
+                  <span>Email Address</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" name="email" id="email" required />
+              </p>
+              <p>
+                <label for="telenum">
+                  <span>Phone Number</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input
+                  type="tel"
+                  name="telenum"
+                  id="telenum"
+                  pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                  placeholder="(123)-456-7890"
+                  required
+                />
+              </p>
+              <p>
+                <label for="password">
+                  <span>Password</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password" name="password" id="password" required />
+              </p>
+              <p>
+                <label for="confirmpassword">
+                  <span>Confirm Password</span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input
+                  type="text"
+                  name="confirmpassword"
+                  id="confirmpassword"
+                  required
+                />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+        <button type="submit">Sign Up Now!</button>
       </section>
     </div>
   </body>

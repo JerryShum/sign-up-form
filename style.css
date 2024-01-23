@@ -55,13 +55,25 @@ section {
     background-color: ivory;
 }
 
+.form-container {
+    position: relative;
+    top: 30vh;
+
+    padding: 20px;
+    width: 100%;
+    border-top: 1px solid rgba(225, 225, 213, 0.607);
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.305);
+
+
+}
+
 form {
-    margin: 0 auto;
     width: 800px;
 }
 
 .form-main {
-    padding: 40px;
+    padding: 2 0px;
     margin: 40px 0;
 
     display: grid;
@@ -69,7 +81,7 @@ form {
     row-gap: 20px;
     justify-items: center;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 input {
