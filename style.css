@@ -2,6 +2,11 @@
 
 /* General Styles */
 
+:root {
+    --main-text-color: white;
+    --section-right-margin-left: 5rem;
+}
+
 * {
     font-family: sans-serif;
 }
@@ -43,7 +48,7 @@ section {
 }
 
 .icon-text {
-    color: white;
+    color: var(--main-text-color);
     font-family: 'Skranji', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 6rem;
 }
@@ -51,19 +56,20 @@ section {
 /* Right Section (form section) */
 
 .section-header {
-    color: white;
+    margin-left: var(--section-right-margin-left);
+
+    color: var(--main-text-color);
     font-size: 6rem;
-    margin-left: 4rem;
 }
 
 .section-text {
     margin-top: 2rem;
-
+    margin-left: var(--section-right-margin-left);
     width: 70%;
+
     color: rgba(255, 255, 255, 0.829);
     font-weight: 500;
     font-size: 2rem;
-    margin-left: 4rem;
 }
 
 .section-form {
@@ -80,11 +86,11 @@ section {
     background-color: #002a5b;
 
     margin-top: 4rem;
-    padding: 20px;
+    padding: 20px 0px 20px 30px;
     width: 100%;
     border-top: 1px solid rgba(225, 225, 213, 0.607);
+    border-bottom: 1px solid rgba(225, 225, 213, 0.607);
 
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.305);
 }
 
 form {
@@ -93,7 +99,7 @@ form {
 
 .form-main {
     /* padding: 2px; */
-    margin: 40px 0px 40px 20px;
+    margin: 40px 0px var(--section-right-margin-left) 20px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,10 +121,15 @@ input {
 
 input:invalid {
     border: 2px solid red;
+    box-shadow: 0px 0px 5px 1px red;
 }
 
 input:valid {
-    border: 2px solid lime;
+    border: 2px solid green;
+    box-shadow: 0px 0px 5px 1px green;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+
 }
 
 label {
@@ -131,13 +142,13 @@ label span {
     letter-spacing: 1.5px;
 
     font-size: 12px;
-    color: white;
+    color: var(--main-text-color);
 }
 
 /* Buttons */
 .btn-submit {
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: var(--section-right-margin-left);
     padding: 20px;
     width: 20%;
     border-radius: 10px;
@@ -145,13 +156,13 @@ label span {
     font-size: 18px;
     font-weight: 700;
 
-    border: 1px solid white;
+    border: 1px solid var(--main-text-color);
 
 }
 
 .btn-submit:hover {
     background-color: #0077ff;
-    color: white;
+    color: var(--main-text-color);
     border: 1px solid #002045;
     transition-duration: 0.5s;
 
