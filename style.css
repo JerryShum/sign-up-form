@@ -132,6 +132,10 @@ input:valid {
 
 }
 
+input:focus {
+    box-shadow: 0px 0px 5px 1px white;
+}
+
 label {
     display: block;
     /* width: 200px; */
@@ -166,4 +170,30 @@ label span {
     border: 1px solid #002045;
     transition-duration: 0.5s;
 
+}
+
+/* Login  */
+
+.login-text {
+    margin: 40px 0px 0px var(--section-right-margin-left);
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+.login-link {
+    text-decoration: none;
+}
+
+.login-link:link {
+    color: #0077ff;
+}
+
+.login-link:visited {
+    color: rgb(135, 132, 192);
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: var(--main-text-color);
+    transition-duration: 0.5s;
 }
