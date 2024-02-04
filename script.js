@@ -1,6 +1,7 @@
 const passwordElement = document.querySelector('#password');
 const confirmPasswordElement = document.querySelector('#confirmpassword');
 const submitButtonElement = document.querySelector('.btn-submit');
+const formElement = document.querySelector('#formElement')
 
 
 function validatePassword() {
@@ -18,6 +19,17 @@ function validatePassword() {
     }
 
 }
-
 confirmPasswordElement.addEventListener("keyup", validatePassword);
+
+function submitButton() {
+
+    if (confirmPasswordElement.classList.contains('invalid')) {
+        alert("Your passwords do not match. Please try again!")
+    } else {
+        // formElement.submit();
+        console.log("Submit attempted!");
+    }
+}
+
+submitButtonElement.addEventListener('click', submitButton);
 
