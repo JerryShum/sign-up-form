@@ -228,17 +228,26 @@ label span {
     width: 100%;
     height: 50px;
 
-
+    font-size: 18px;
     font-family: monospace;
     font-weight: 700;
-    text-align: center;
+
 }
 
 .footer-link {
     display: flex;
+    gap: 10px;
     align-items: baseline;
     justify-content: center;
     text-decoration: none;
 
-    color: #24292f;
+    letter-spacing: 1.5px;
+
+    color: white;
+}
+
+.footer-logo {
+    height: 40px;
+    width: 40px;
+    fill: white;
 }
