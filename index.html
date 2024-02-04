@@ -30,7 +30,7 @@
           to get started.
         </h2>
         <div class="form-container">
-          <form action="index.html" method="post">
+          <form action="index.html" method="get" id="formElement">
             <fieldset class="form-main">
               <p>
                 <label for="firstname">
@@ -70,6 +70,7 @@
                   id="telenum"
                   pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
                   placeholder="(123)-456-7890"
+                  minlength="10"
                   required
                 />
               </p>
@@ -93,16 +94,20 @@
                 />
               </p>
             </fieldset>
+
+            <div class="submit-container">
+              <button type="submit" value="submit" class="btn-submit">
+                Sign Up Now!
+              </button>
+
+              <div class="login-text">
+                <span
+                  >Already have an account?
+                  <a href="#" class="login-link">Log In</a>
+                </span>
+              </div>
+            </div>
           </form>
-        </div>
-
-        <button type="submit" class="btn-submit">Sign Up Now!</button>
-
-        <div class="login-text">
-          <span
-            >Already have an account?
-            <a href="" class="login-link">Log In</a></span
-          >
         </div>
       </section>
     </div>

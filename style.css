@@ -151,8 +151,7 @@ label span {
 
 /* Buttons */
 .btn-submit {
-    margin-top: 40px;
-    margin-left: var(--section-right-margin-left);
+    margin-left: 20px;
     padding: 20px;
     width: 20%;
     border-radius: 10px;
@@ -169,15 +168,29 @@ label span {
     color: var(--main-text-color);
     border: 1px solid #002045;
     transition-duration: 0.5s;
+    cursor: pointer;
 
 }
 
+
+
 /* Login  */
 
+.submit-container {
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+
+    gap: 40px;
+}
+
 .login-text {
-    margin: 40px 0px 0px var(--section-right-margin-left);
+    /* margin: 40px 0px 0px var(--section-right-margin-left); */
     color: var(--main-text-color);
     font-size: 18px;
+
 }
 
 .login-link {
